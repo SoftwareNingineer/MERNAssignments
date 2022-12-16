@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Bootstrap Getting Started</title> -->
+    <title>JM-OnlineShop</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- Bootstrap css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- hover.css -->
+  <link rel="stylesheet" href="/Hover-master/css/hover.css">
+    <style>
+        /* .title{
+            color: black;
+            background-color: darkcyan;
+        } */
+
+        .fa {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+         ----------NOTES---------
+        use terminal
+        
+        *read documentation of bootstrap
+        making folder = mkdir foldername
+        Extension: autorename
+        CSS other frameworks: materialui will be used in react
+        bootstrap color customization.
+        Bootstrap container
+        Bootstrap Grid
+        Bootstrap Cards
+        Navbar
+        netlify.com : Free hosting
+       
+        https://jm-onlineshop.netlify.app/
+
+        Download Bootstrap
+        Font Awesome(csn also be downloaded) for Icons.
+         Screens : 
+            extra small : < 576px
+            small:576 - 767px(breakpoint: 566)
+            medium: 766-992(breakpoint : 765)
+            large: 992 - 1200px(breakpoint: 1199)
+            XL: 1200 -1400(breakpoint : )
+            XXL : 1400 -above
+        shourtcut: 
+            .col-md-1*16 
+            multicursor shourcut : alt + click cusor on next row OR Select class and then ctrl + D
+            shift + alt + arrowdown  : to copy a whole line. alt+ tab - to switch b/t screen
+            1-0.25rem = 4px
+            2-0.5rem = 8px
+            3-1rem = 16 px
+            4-1.5rem =24px
+            5-3rem = 48px
+            shift + alt + F = for code formating
+
+
+        
+     -->
+    <!-- <div class="container">
+<h1 class="bg-primary text-light">HEllo World!</h1>
+<h2 class="title">MERN Bootcamp</h2>
+</div>
+<div class="container-fluid">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione expedita odio earum tempora obcaecati dolorem modi. Laborum cumque vero laudantium quas voluptatum cupiditate facere inventore ullam quia. Quaerat, amet.</p>
+</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores veritatis suscipit ab omnis vitae quo delectus quos aliquam ea accusamus vero blanditiis reiciendis, ipsa quam quibusdam quisquam velit, optio illo?</p>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <h2>Watches</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum eius beatae amet dolores possimus voluptates illo soluta eligendi, ducimus neque, cupiditate eos, esse eum? Unde quas deleniti fugit culpa!
+            </p>
+            <button class="btn bg-primary">Read More</button>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <h2>Watches</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum eius beatae amet dolores possimus voluptates illo soluta eligendi, ducimus neque, cupiditate eos, esse eum? Unde quas deleniti fugit culpa!
+            </p>
+            <button class="btn btn-outline-success btn-sm">Read More</button>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <h2>Watches</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum eius beatae amet dolores possimus voluptates illo soluta eligendi, ducimus neque, cupiditate eos, esse eum? Unde quas deleniti fugit culpa!
+            </p>
+            <div class="d-grid gap-2">
+            <button class="btn btn-outline-danger">Read More</button>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <h2>Watches</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum eius beatae amet dolores possimus voluptates illo soluta eligendi, ducimus neque, cupiditate eos, esse eum? Unde quas deleniti fugit culpa!
+            </p>
+            <button class="btn btn-outline-dark">Read More</button>
+        </div>
+    </div>
+</div> -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar bg-dark navbar-expand-sm mb-2 navbar-dark">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">JM-OnlineStore</a>
+            <button class="navbar-toggler" data-bs-target="#myNav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="myNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Products</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="row">
+        <div class="col">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- CAROUSEL INDICATORS -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+
+                </div>
+                <!-- carousel inner -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="/img/AboutUs1.gif" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h4>Office</h4>
+                            <p>On the top of building</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img src="/img/sliderImg.png" alt="" class="d-block w-100">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/AboutUs3.jpg" alt="" class="d-block w-100">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/2.png" alt="" class="d-block w-100">
+
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cards -->
+    <h2 class="text-center my-3 animate__animated animate__flipInX">Featued Products</h2>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-4 mt-3">
+                <div class="card hvr-sweep-to-right">
+                    <img src="/AboutUs1.gif" alt="" class="card-img-top">
+
+                    <div class="card-body hvr-grow">
+                        <h5 class="card-title">GIF</h5>
+                        <p class="card-text">Most demanded</p>
+                        <p class="card-text"><b>Price</b> <span class="text-">$600</span></p>
+                        <div>
+                            <li class="fab fa-facebook"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star-half"></li>
+                        </div>
+                        <button class="btn btn-primary mt-3"> Add to cart</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-4 mt-3">
+                <div class="card">
+                    <img src="/AboutUs1.gif" alt="" class="card-img-top">
+
+                    <div class="card-body hvr-shrink">
+                        <h5 class="card-title">GIF</h5>
+                        <p class="card-text">Most demanded</p>
+                        <p class="card-text"><b>Price</b> <span class="text-">$600</span></p>
+                        <div>
+                            <li class="fab fa-facebook"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star-half"></li>
+                        </div>
+                        <button class="btn btn-primary mt-3"> Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Accordion -->
+    <div class="container-fluid">
+        <!-- <div id="accordion" id="accordionExample"> -->
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Collapse Group Item</a>
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo vel
+                    eligendi hic quas nesciunt officiis doloremque quasi autem! Corporis perferendis praesentium
+                    incidunt ex voluptates mollitia odio illum, temporibus neque!</div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapsTwo">Collapse Group Item</a>
+                </div>
+                <div id="collapsTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo vel
+                        eligendi hic quas nesciunt officiis doloremque quasi autem! Corporis perferendis praesentium
+                        incidunt ex voluptates mollitia odio illum, temporibus neque!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseThree">Collapse Group Item</a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo vel
+                    eligendi hic quas nesciunt officiis doloremque quasi autem! Corporis perferendis praesentium
+                    incidunt ex voluptates mollitia odio illum, temporibus neque!</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <!-- Bootstrap Bundle File -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    </script>
+</body>
+
+</html>
